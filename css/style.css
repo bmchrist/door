@@ -18,6 +18,11 @@ body{
     margin: auto 20px;
 }
 
+.webcam{
+    display: block;
+    margin: 10px auto;
+}
+
 .table.users{
     margin-bottom: 0;
 }

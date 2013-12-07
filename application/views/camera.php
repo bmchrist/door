@@ -1,4 +1,5 @@
 <?php $this->load->view('layout/header'); ?>
-<img src="/?action=stream">
-<?php echo $_SERVER['HTTP_HOST'] ?>:8080
+<div>
+	<img class="webcam" src="http://<?php echo $_SERVER['HTTP_HOST'] ?>:8080/?action=stream"/>
+</div>
 <?php $this->load->view('layout/footer'); ?>
