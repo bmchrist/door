@@ -23,4 +23,7 @@ class User_model extends CI_Model {
         $this->db->update('users', $user, array('id' => $id) );
     }
 
+    function delete($id){
+        $this->db->delete('users', array('id' => $id) );
+    }
 }

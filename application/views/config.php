@@ -20,6 +20,7 @@ $options = array(
         <th>Color</th>
         <th>Email</th>
         <th>Recieves Emails</th>
+        <th></th>
     </tr>
 <?php foreach($users as $index => $user): ?>
     <?php echo form_hidden("id[$index]", "$user->id"); ?>
@@ -29,6 +30,7 @@ $options = array(
         <td><?php echo form_dropdown("color[$index]", $options, "$user->color");?></td>
         <td><?php echo form_input("mail[$index]", "$user->mail"); ?></td>
         <td><?php echo form_checkbox("recv_mail[$index]", '1', TRUE);?></td>
+        <td><?php echo anchor("app/delete_user/$user->id", 'Delete'); ?></td>
     </tr>
 <?php endforeach; ?>
 </table>

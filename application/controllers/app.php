@@ -36,6 +36,12 @@ class App extends CI_Controller {
         redirect('/app/config', 'location');
     }
 
+    public function delete_user($id){
+        $this->load->model('User_model');
+        $this->User_model->delete($id);
+        redirect('/app/config', 'location');
+    }
+
     public function add_user(){
         $this->load->model('User_model');
         $post_data = $this->input->post();
