@@ -14,7 +14,7 @@
                     <?php echo anchor('app/index', 'Home'); ?>
                 </li>
                 <li class="<?php echo $page == 'camera' ? 'active' : '' ?>">
-                    <?php echo anchor('', 'Camera'); ?>
+                    <?php echo anchor('app/camera', 'Camera'); ?>
                 </li>
                 <li class="<?php echo $page == 'config' ? 'active' : '' ?>">
                     <?php echo anchor('app/config', 'Config'); ?>
